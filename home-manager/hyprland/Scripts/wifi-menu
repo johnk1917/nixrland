@@ -1,9 +1,9 @@
 #!/bin/sh 
-bssid=$(nmcli dev wifi list | sed -n '1!p' | cut -b 9- | rofi -dmenu -theme ~/.config/rofi/launchers/type-4/wifi-menu.rasi -p " "| cut -d' ' -f1)
+bssid=$(nmcli dev wifi list | sed -n '1!p' | cut -b 9- | rofi -dmenu -theme ~/.config/rofi/wifi-menu/style-1.rasi -p " " | cut -d' ' -f1)
 
 [ -z "$bssid" ] && exit
 
-password=$(echo "" | rofi -dmenu -theme ~/.config/rofi/launchers/type-4/wifi-password.rasi -p " " )
+password=$(echo "" | rofi -dmenu -theme ~/.config/rofi/wifi-menu/wifi-password.rasi -p " " )
 
 wifi_network=$(nmcli -t -f active,ssid dev wifi | egrep '^yes' | cut -d\' -f2 | sed 's/^[^:]*://')
 icon=$HOME/.config/home-manager/hyprland/icons/wifi-icon.png

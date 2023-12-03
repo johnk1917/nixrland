@@ -79,6 +79,10 @@
           animation = workspaces, 1, 6, default
       }
 
+      misc {
+        disable_hyprland_logo = true
+      }
+
       dwindle {
           # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
           pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
@@ -129,7 +133,7 @@
       bind = $altMod SHIFT, M, exit, 
       bind = $mainMod SHIFT, SPACE, togglefloating,
       bind = $mainMod, F, fullscreen
-      bind = $mainMod, D, exec, $HOME/.config/rofi/launchers/type-4/launcher.sh
+      bind = $mainMod, D, exec, $HOME/.config/rofi/launchers/type-1/launcher.sh
       bind = $mainMod SHIFT, A, exec, $terminal1 -e ani-cli
       bind = $mainMod, S, exec, $hypr_scripts/screenshot 
       bind = $mainMod, X, exec, $HOME/.config/rofi/scripts/powermenu_t2

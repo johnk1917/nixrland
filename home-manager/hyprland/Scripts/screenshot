@@ -7,7 +7,7 @@ op2="Selected Area"
 
 ops="${op1}\n${op2}"
 
-selected=$(echo -e $ops | rofi -dmenu -theme ~/.config/rofi/launchers/type-4/screenshot.rasi drun -display-drun -p "󰄀 ")
+selected=$(echo -e $ops | rofi -dmenu -theme ~/.config/rofi/screenshot/style-1.rasi drun -display-drun -p "Screenshot")
 
 sleep 0.3
 
