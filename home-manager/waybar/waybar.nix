@@ -332,7 +332,7 @@
         "custom/wmname" = {
           format = " ";
           tooltip = "false";
-          on-click = "$HOME/.config/rofi/launchers/type-4/launcher.sh";
+          on-click = "$HOME/.config/rofi/launchers/type-1/launcher.sh";
           on-click-right = "$HOME/.config/home-manager/hyprland/Scripts/screenshot";
           on-click-middle = "$HOME/.config/home-manager/hyprland/Scripts/wallpaper-switch";
         };
