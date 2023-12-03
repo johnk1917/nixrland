@@ -1,14 +1,13 @@
-{config, pkgs, ... }: {
-  services.spotifyd = {
-    package = pkgs.spotifyd;
-    enable = true;
-    settings = {
-      global = {
-        username = "johnfkennedy04@gmail.com";
-        password = "Jfk03232004";
-        backend = "pulseaudio";
-        device_name = "nix";
-      };
-    };
-  };
+{ config, pkgs, ... }: {
+xdg.configFile."/home/john1917/.config/spotifyd/spotifyd.conf".text = ''
+  [global]
+  # Your Spotify account name.
+  username = "johnfkennedy04@gmail.com"
+
+  # Your Spotify account password.
+  password = "Jfk"
+
+  # backend
+  backend = "pulseaudio"
+'';
 }
