@@ -1,0 +1,8 @@
+#!/bin/sh
+bemenu-run -i -l 15 -p "Run Command:"\
+    --fn 'Iosevka Nerd Font 16px' \
+    --nb '#16161e[FF]' --ff '#abb2bf[FF]' \
+    --tb '#7aa2f7[FF]' --tf '#16161e[FF]' \
+    --fb '#16161e[FF]' --ff '#abb2bf[FF]' \
+    --hb '#7aa2f7[FF]' --hf '#16161e[FF]' \
+    --ab '#16161e[FF]' --sf '#7aa2f7[FF]' \

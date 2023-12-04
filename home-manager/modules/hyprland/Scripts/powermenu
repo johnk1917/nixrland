@@ -1,0 +1,19 @@
+#!/bin/sh
+
+op1="Suspend"
+op2="Poweroff"
+op3="Reboot"
+
+ops="${op1}\n${op2}\n${op3}"
+
+selected=$(echo -e $ops | rofi -dmenu -theme ~/.config/rofi/config.rasi drun -display-drun -p "⏻ ")
+
+sleep 0.7
+
+if [[ $selected == $op1 ]]; then
+    systemctl suspend && swaylock --screenshots --effect-blur 7x5 --fade-in 0 
+elif [[ $selected == $op2 ]]; then
+    systemctl poweroff
+elif [[ $selected == $op3 ]]; then
+    systemctl reboot
+fi
