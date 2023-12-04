@@ -332,7 +332,7 @@
           format-ethernet = "{ifname}: {ipaddr}/{cidr}  ";
           format-linked = "{ifname} (No IP)  ";
           format-disconnected = "󰖪  Disconnected";
-          on-click = "$HOME/.config/home-manager/hyprland/Scripts/wifi-menu";
+          on-click = "$HOME/.config/home-manager/modules/hyprland/Scripts/wifi-menu";
           tooltip-format = "{essid} {signalStrength}%";
         };
 
@@ -360,13 +360,13 @@
           format = " ";
           tooltip = "false";
           on-click = "$HOME/.config/rofi/launchers/type-1/launcher.sh";
-          on-click-right = "$HOME/.config/home-manager/hyprland/Scripts/screenshot";
-          on-click-middle = "$HOME/.config/home-manager/hyprland/Scripts/wallpaper-switch";
+          on-click-right = "$HOME/.config/home-manager/modules/hyprland/Scripts/screenshot";
+          on-click-middle = "$HOME/.config/home-manager/modules/hyprland/Scripts/wallpaper-switch";
         };
 
         "custom/powermenu" = {
           format = " ";
-          on-click = "$HOME/.config/rofi/scripts/powermenu_t2";
+          on-click = "$HOME/.config/rofi/powermenu/powermenu.sh";
         };
       };
     };
