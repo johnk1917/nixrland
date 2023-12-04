@@ -134,7 +134,7 @@
       bind = $mainMod, D, exec, $HOME/.config/rofi/launchers/type-1/launcher.sh
       bind = $mainMod SHIFT, A, exec, $terminal -e ani-cli
       bind = $mainMod, S, exec, $hypr_scripts/screenshot 
-      bind = $mainMod, X, exec, $HOME/.config/rofi/scripts/powermenu_t1
+      bind = $mainMod, X, exec, $HOME/.config/rofi/powermenu/powermenu.sh
       bind = $mainMod, W, exec, $hypr_scripts/wallpaper-switch
       bind = $mainMod SHIFT, G, exec, $hypr_scripts/pdf-launcher
       bind = $mainMod SHIFT, W, exec, $hypr_scripts/wifi-menu
