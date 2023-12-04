@@ -1,4 +1,4 @@
-{ config, pkgs, lib, spicetify-nix, ... }:
+{ config, pkgs, lib, ... }:
 
 { 
   home = { 
@@ -13,13 +13,16 @@
 
   # import dots
   imports = [
-      ./waybar/waybar.nix
-      ./hyprland/hyprland.nix
-      ./foot/foot.nix
-      ./spotifyd/spotifyd.nix
-      ./dunst/dunst.nix
-      ./zathura/zathura.nix
-      ./swaylock/swaylock.nix
+      ./modules/waybar/waybar.nix
+      ./modules/hyprland/hyprland.nix
+      ./modules/foot/foot.nix
+      ./modules/spotifyd/spotifyd.nix
+      ./modules/dunst/dunst.nix
+      ./modules/zathura/zathura.nix
+      ./modules/swaylock/swaylock.nix
+      ./modules/spotify-tui/spotify-tui.nix
+      ./modules/rofi/rofi.nix
+      ./modules/hyprland/hyprscripts.nix
   ];
  
   # enabling GTK themes
@@ -42,10 +45,10 @@
 
   # Mimetypes
   xdg.mimeApps.defaultApplications = {
-  "application/pdf" = [ "zathura.desktop" ];
-  "image/*" = [ "viewnior.desktop" ];
-  "video/png" = [ "mpv.desktop" ];
-  "video/jpg" = [ "mpv.desktop" ];
-  "video/*" = [ "mpv.desktop" ];
+    "application/pdf" = [ "zathura.desktop" ];
+    "image/*" = [ "viewnior.desktop" ];
+    "video/png" = [ "mpv.desktop" ];
+    "video/jpg" = [ "mpv.desktop" ];
+    "video/*" = [ "mpv.desktop" ];
     };
   }
