@@ -1,9 +1,0 @@
-#!/bin/sh
-
-book_directory="$HOME/Documents/Books/"
-selected=$(ls -r "${book_directory}" | grep -E "*pdf$" | rofi -dmenu -theme ~/.config/rofi/pdf-launcher/style-1.rasi drun -display-drun -p " ")
-
-[ -z "$selected" ] && exit
-
-zathura ${book_directory}"${selected}"
-
