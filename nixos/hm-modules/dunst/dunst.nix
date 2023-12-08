@@ -16,7 +16,9 @@
         stack_duplicates = "false";
         hide_duplicate_count = "yes";
         corner_radius=6;
-        geometry = "280x50-10+44";
+        width = "280";
+        height = "50-10";
+        offset = "30x30";
         shrink = "no";
         idle_threshold = 120;
         monitor = 0;
@@ -35,7 +37,8 @@
         title = "Dunst";
         class = "Dunst";
         icon_position = "left";
-        max_icon_size = "48";
+        min_icon_size = "32";
+        max_icon_size = "56";
         frame_width = "3";
       };
 
