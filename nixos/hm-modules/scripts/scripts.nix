@@ -141,8 +141,8 @@ screenshot = pkgs.writeShellApplication {
   text = ''
 icon=/etc/nixos/hm-modules/icons/camera-photo-symbolic.svg
 
-op1="Fullscreen"
-op2="Selected Area"
+op1=" Fullscreen"
+op2="󰆟 Selected Area"
 
 ops="''${op1}\n''${op2}"
 
@@ -188,11 +188,13 @@ list_wallpapers() {
 
 selected_wallpaper="$(list_wallpapers "''${wallpapers}" |  rofi -dmenu -theme ~/.config/rofi/wallpaper-selection/style-1.rasi -p " ")"
 
+icon="''${wallpapers}""''${selected_wallpaper}"
+
 if [[ -f "$selected_wallpaper" ]]; then
     exit 0;
 fi
 
-swww img "''${wallpapers}""''${selected_wallpaper}"
+swww img "''${wallpapers}""''${selected_wallpaper}" && dunstify -u low --replace=69 -i "''${icon}" "Wallpaper Changed"
   '';
 };
 

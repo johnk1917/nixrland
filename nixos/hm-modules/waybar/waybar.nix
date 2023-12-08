@@ -289,7 +289,7 @@
         };
 
         "tray" = {
-          spacing = "10";
+          spacing = 8;
         };
 
         "clock" = {
@@ -328,18 +328,20 @@
         };
         
         "network" = {
-          format-wifi = "󰖩 {essid}";
+          format-wifi = " {essid} {signalStrength}%";
           format-ethernet = "{ifname}: {ipaddr}/{cidr}  ";
           format-linked = "{ifname} (No IP)  ";
-          format-disconnected = "󰖪  Disconnected";
+          format-disconnected = "󰤮 Disconnected";
           on-click = "wifi-menu";
           tooltip-format = "{essid} {signalStrength}%";
         };
 
         "pulseaudio" = {
-          format = "{icon}{volume}%";
+          format = "{icon}{volume}% {format_source}";
           format-bluetooth = "{icon} {volume}%";
           format-bluetooth-muted = "   {volume}%";
+          format-source = "";
+          format-source-muted = "";
           format-muted = "  {format_source}";
           format-icons = {
               headphone = " ";
