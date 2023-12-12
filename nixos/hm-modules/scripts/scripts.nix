@@ -207,13 +207,13 @@ dir="$HOME/.config/rofi/powermenu/"
 theme='style-1'
 
 # Options
-shutdown=' Shutdown'
-reboot=' Reboot'
-lock=' Lock'
-suspend=' Suspend'
-logout=' Logout'
-yes=' Yes'
-no=' No'
+shutdown='⏻ Shutdown'
+reboot=' Reboot'
+lock='󰌾 Lock'
+suspend='󰤄 Suspend'
+logout='󰍃 Logout'
+yes=' Yes'
+no='  No'
 
 # Rofi CMD
 rofi_cmd() {
@@ -254,7 +254,7 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
-			systemctl suspend && swaylock 
+		  swaylock 
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
 				openbox --exit

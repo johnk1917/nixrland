@@ -296,7 +296,7 @@
         "clock" = {
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
 	        format = " {:%H:%M}";
-	        format-alt = " {:%A, %B %d, %Y}";
+	        format-alt = " {:%A, %B %d, %Y}";
         };
 
         "cpu" = {
