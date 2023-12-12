@@ -51,7 +51,6 @@
 
   # Environment Variables for NixOS 
   environment.sessionVariables = rec {
-    GTK_THEME = "TokyoNight";
     terminal1 = "footclient";
     EDITOR = "nvim";
   };
@@ -71,7 +70,7 @@
   # Enable the Display Manager.
   services.xserver.displayManager.lightdm = {
     enable = true;
-    background = ./wallpapers/hashira2.png;
+    background = ./wallpapers/NightCityC.png;
     extraConfig = ''
       color = #1a1b26
     '';

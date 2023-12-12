@@ -48,7 +48,7 @@
       /* colors = {
          alpha="0.95";
          foreground="0xcdd6f4"; 
-         background="0x1e1e2e";
+         background="0x181825";
 
          regular0="0x45475a"; 
          regular1="0xf38ba8";   

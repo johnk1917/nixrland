@@ -32,7 +32,8 @@ in
      nitch
      htop
      killall
-     cinnamon.nemo
+     fzf
+     xfce.thunar
      haskellPackages.libfuse3
      appimage-run
      pavucontrol
@@ -70,7 +71,6 @@ in
      eza
      mpv
      ani-cli
-     fzf
      libnotify 
      xdg-user-dirs
      xdg-desktop-portal-hyprland

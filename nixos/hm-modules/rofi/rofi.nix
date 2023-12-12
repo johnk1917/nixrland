@@ -18,6 +18,25 @@
   }
   '';
 
+  xdg.configFile."/home/john1917/.config/rofi/colors/catppuccin-mocha.rasi".text = ''
+  /**
+  *
+   * Author : Levi Lacoss (fishyfishfish55)
+   * Github : @fishyfishfish55
+   *
+   * Colors
+   **/
+
+  * {
+      background:     #181825FF;
+      background-alt: #181825FF;
+      foreground:     #CDD6F4FF;
+      selected:       #89B4FAFF;
+      active:         #45475AFF;
+      urgent:         #F38BA8FF;
+  }
+  '';
+
   xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/launcher.sh" = {
     executable = true;
     text = ''

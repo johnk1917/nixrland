@@ -9,7 +9,7 @@
           * Maintainer: johnk1917
           *
           */
-          
+           
           @define-color background #1a1b26;
           @define-color foreground #c0caf5;
           @define-color alt_background #1f1f2d;
@@ -34,10 +34,10 @@
           
 
           /* Catppuccin Mocha palette*/ 
-          /* 
-          @define-color foreground #cdd6f4;
-          @define-color background #1e1e2e;
-          @define-color alt_background #1e2030;
+          
+          /*@define-color foreground #cdd6f4;
+          @define-color background #181825;
+          @define-color alt_background #1e1e2e;
 
           @define-color black #45475a;
           @define-color red #f38ba8;
@@ -55,8 +55,8 @@
           @define-color alt_yellow #f9e2af;
           @define-color alt_magenta #f5c2e7;
           @define-color alt_cyan #94e2d5;
-          @define-color alt_white #a6adc8;
-          */
+          @define-color alt_white #a6adc8;*/
+          
 
         * {
 
@@ -251,7 +251,8 @@
     '';
     settings = {
       mainBar = {
-        margin = "8px 10px -2px 10px"; 
+        margin = "8px 10px -2px 10px";
+        layer = "top";
 
         modules-left = ["custom/wmname" "hyprland/workspaces" "hyprland/window"];
         modules-center = [];

@@ -17,7 +17,6 @@
       # Execute your favorite apps at launch
       exec-once = swww init 
       exec-once = dunst
-      exec-once = foot --server
       exec-once = spotifyd
       exec-once = waybar
 
@@ -42,8 +41,10 @@
           gaps_in = 5
           gaps_out = 10
           border_size = 3
-          col.active_border = rgba(7aa2f7ee) rgba(87aaf8ee) 45deg
-          col.inactive_border = rgba(32344aaa)
+          col.active_border = rgba(7aa2f7ee) rgba(87aaf8ee) 45deg # tokyonight
+          # col.active_border = rgba(89b4faee) rgba(89b4faee) 45deg # catppuccin-mocha
+          col.inactive_border = rgba(32344aaa) # tokyonight 
+          # col.inactive_border = rgba(1e1e2eaa) # catppuccin-mocha
 
           layout = master
       }
@@ -126,7 +127,7 @@
       $altMod = ALT
 
       # Set terminal
-      $terminal = footclient
+      $terminal = foot
       $terminal2 = kitty
 
       # Launch programs
@@ -147,7 +148,7 @@
       bind = $mainMod SHIFT, R, exec, $terminal -e yazi
       bind = $mainMod SHIFT, Z, exec, zathura
       bind = $mainMod SHIFT, S, exec, librewolf
-      bind = $mainMod SHIFT, F, exec, nemo
+      bind = $mainMod SHIFT, F, exec, thunar
       bind = $mainMod SHIFT, X, exec, firefox
       bind = $mainMod SHIFT, E, exec, libreoffice
 
