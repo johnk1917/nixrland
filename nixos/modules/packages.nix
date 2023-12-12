@@ -7,6 +7,11 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Allow electron
+  nixpkgs.config.permittedInsecurePackages = [ 
+	"electron-25.9.0"
+  ];
+
   # Add packages to NixOS here
   environment.systemPackages = with pkgs; [
      wget
@@ -15,6 +20,7 @@ in
      cl 
      spotify-tui
      spotifyd
+     steam
      playerctl
      cava
      llvmPackages_9.clangUseLLVM
@@ -35,6 +41,7 @@ in
      fzf
      xfce.thunar
      haskellPackages.libfuse3
+     polkit_gnome
      appimage-run
      pavucontrol
      gtk3
@@ -45,6 +52,7 @@ in
      wl-clipboard
      alacritty
      fastfetch
+     libsForQt5.qt5.qtgraphicaleffects
      lf
      spotify
      yazi

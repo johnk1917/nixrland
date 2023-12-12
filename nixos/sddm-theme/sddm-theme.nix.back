@@ -1,0 +1,20 @@
+{ pkgs }: 
+
+let 
+  image = ../wallpapers/NightCity.png;
+in
+pkgs.stdenv.mkDerivation {
+  name = "sddm-theme";
+  src = pkgs.fetchFromGitHub {
+    owner = "johnk1917";
+    repo = "sddm-sugar-dark-tokyonight";
+    rev = "daa267d8470a4a3b757178998e6690aa988027ce";
+    sha256 = "10pv4cmkxmw4gv2vdskj0gwsxsa3im7v028d79ajiwyb2idkhfdp";
+  };
+  installPhase = ''
+    mkdir -p $out 
+    cp -R ./* $out/
+    rm Background.jpg 
+    cp -r ${image} $out/Background.jpg
+  '';
+}
