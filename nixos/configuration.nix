@@ -5,7 +5,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./modules/hardware-configuration.nix
+      ./hardware-configuration.nix
       ./modules/packages.nix
     ];
 
@@ -15,6 +15,23 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # Enable gnome polkit 
+  systemd = {
+  user.services.polkit-gnome-authentication-agent-1 = {
+    description = "polkit-gnome-authentication-agent-1";
+    wantedBy = [ "graphical-session.target" ];
+    wants = [ "graphical-session.target" ];
+    after = [ "graphical-session.target" ];
+    serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+        Restart = "on-failure";
+        RestartSec = 1;
+        TimeoutStopSec = 10;
+      };
+  };
+};
   
   # OBS Virtual Camera 
   boot.extraModulePackages = with config.boot.kernelPackages; [
@@ -24,6 +41,8 @@
     options v4l2loopback video_nr=9 card_label=OBS exclusive_caps=1
   '';
   security.polkit.enable = true;
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   
   # Define hostname
   networking.hostName = "nixos"; 
@@ -60,26 +79,21 @@
     enable = true; 
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland ]; 
   };
-  
+
   # Enable Hyprland + Other WMs 
   programs.hyprland.enable = true;
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
+  
   # Enable the Display Manager.
-  services.xserver.displayManager.lightdm = {
-    enable = true;
-    background = ./wallpapers/NightCityC.png;
-    extraConfig = ''
-      color = #1a1b26
-    '';
-    greeters = {
-      slick = {
-        enable = true;
-      };
-    };
-  };
+  # services.xserver.displayManager.lightdm = {
+  #  enable = false;
+  #  background = ./wallpapers/NightCityC.png;
+  # greeters = {
+  #    slick = {
+  #      enable = true;
+  #    };
+  #  };
+  # };
+
 
   # Enable fonts 
   fonts.packages = with pkgs; [
@@ -96,8 +110,15 @@
 
   # Configure keymap in X11
   services.xserver = {
+    enable = true;
     layout = "us";
     xkbVariant = "";
+    displayManager = {
+      sddm = {
+        enable = true;
+        theme = "${import ./sddm-theme/sddm-theme.nix { inherit pkgs; }}";
+      };
+    };
   };
 
   # Enable CUPS to print documents.
@@ -142,8 +163,8 @@
     settings = {
       add_newline = true;
       character = {
-         success_symbol = "[   ](bold blue)";
-         error_symbol = "[   ](bold red)";
+         success_symbol = "[󰊠   ](bold blue)";
+         error_symbol = "[󰊠   ](bold red)";
        };
       nix_shell = {
          disabled = false;
