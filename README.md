@@ -1,7 +1,7 @@
 # nixrland
 Reproducible dotfiles for my Hyprland/Waybar configuration 
 
-Rofi config, as well as the configurations compatible with non-NixOS distros can be found on my other repo: https://github.com/johnk1917/hyprland-dotfiles/
+The non-NixOS version of this repo can be found on: https://github.com/johnk1917/hyprland-dotfiles/
 
 Preview:
 ![image](https://github.com/johnk1917/nixrland/assets/96326315/32564018-b59e-4e4f-906c-397657099967)
