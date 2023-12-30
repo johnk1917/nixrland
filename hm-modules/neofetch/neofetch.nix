@@ -20,7 +20,7 @@ print_info() {
 #    info " " disk
     info "󰟖 " memory
     info "󰍹 " resolution
-    info "󱈑 " battery 
+#    info "󱈑 " battery 
 #    info underline
     prin ""
     prin "Software Information"
@@ -28,7 +28,7 @@ print_info() {
 # Just get your distro's logo off nerdfonts.com
     info " " kernel
     info " " de
-    info "" shell
+    info " " shell
     info " " term
     info " " term_font
     info "󰉼 " theme

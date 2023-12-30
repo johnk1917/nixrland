@@ -1,5 +1,5 @@
 {config, pkgs, ... }: {
-    xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+    xdg.configFile."/home/john1917/.config/kitty/kitty.conf.tokyonight".text = ''
 # Tokyo Night color scheme for kitty terminal emulator
 # https://github.com/davidmathers/tokyo-night-kitty-theme
 #
@@ -90,5 +90,105 @@
   # active_tab_background   #1f2335
   # inactive_tab_background #1f2335
   # macos_titlebar_color #1f2335
+  '';
+
+  xdg.configFile."/home/john1917/.config/kitty/kitty.kanagawa.conf".text = ''
+  ## name: Kanagawa
+## license: MIT
+## author: Tommaso Laurenzi
+## upstream: https://github.com/rebelot/kanagawa.nvim/
+
+
+background #1F1F28
+foreground #DCD7BA
+selection_background #2D4F67
+selection_foreground #C8C093
+url_color #72A7BC
+cursor #C8C093
+
+# Tabs
+active_tab_background #1F1F28
+active_tab_foreground #C8C093
+inactive_tab_background  #1F1F28
+inactive_tab_foreground #727169
+#tab_bar_background #15161E
+
+# normal
+color0 #16161D
+color1 #C34043
+color2 #76946A
+color3 #C0A36E
+color4 #7E9CD8
+color5 #957FB8
+color6 #6A9589
+color7 #C8C093
+
+# bright
+color8  #727169
+color9  #E82424
+color10 #98BB6C
+color11 #E6C384
+color12 #7FB4CA
+color13 #938AA9
+color14 #7AA89F
+color15 #DCD7BA
+
+
+# extended colors
+color16 #FFA066
+color17 #FF5D62
+
+# Font
+    font_family      Iosevka Nerd Font
+    font_size      13.0
+
+# Close window confirmation 
+    confirm_os_window_close 0 
+  '';
+
+ xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+background #1d2021
+foreground #ebdbb2
+selection_background #3c3836
+selection_foreground #C8C093
+url_color #8ec07c
+cursor #C8C093
+
+# normal
+color0 #282828
+color1 #cc241d
+color2 #98971a
+color3 #d79921
+color4 #458588
+color5 #b16286
+color6 #689d6a
+color7 #a89984
+
+# bright
+color8  #3c3836
+color9  #fb4934
+color10 #b8bb26
+color11 #fabd2f
+color12 #83a598
+color13 #d3869b
+color14 #8ec07c
+color15 #ebdbb2
+
+
+# extended colors
+color16 #d65d0e
+
+# Font
+    font_family      Iosevka Nerd Font
+    font_size      13.0
+
+# Close window confirmation 
+    confirm_os_window_close 0
+
+# Padding
+    window_margin_width 12
+
+# Opacity
+    background_opacity 0.95
   '';
 }

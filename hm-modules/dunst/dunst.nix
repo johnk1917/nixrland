@@ -18,7 +18,7 @@
         corner_radius=6;
         width = "280";
         height = "50-10";
-        offset = "30x30";
+        offset = "10x30";
         shrink = "no";
         idle_threshold = 120;
         monitor = 0;
@@ -50,27 +50,52 @@
       };
 
       urgency-normal = {
-        frame_color = "#7aa2f7";
+        /* Tokyo Night */
+        /* frame_color = "#7aa2f7";
         foreground = "#7aa2f7";
         background = "#1a1b26";
-        timeout = 5; 
+        timeout = 5; */
 
+        /* Catppuccin */
         /*frame_color = "#89b4fa";
         foreground = "#89b4fa";
         background = "#181825";
         timeout = 5;*/
+        
+        /* Kanagawa */
+        /* frame_color = "#7e9cd8";
+        foreground = "#7e9cd8";
+        background = "#1f1f28";
+        timeout = 5; */
+
+        /* Gruvbox */
+        frame_color = "#8ec07c";
+        foreground = "#ebdbb2";
+        background = "#1d2021";
       };
 
       urgency-critical = {
-        frame_color = "#E06C75";
+        /* Tokyo Night */
+        /* frame_color = "#E06C75";
         foreground = "#E06C75";
         background = "#1a1b26";
-        timeout = 5; 
-
+        timeout = 5; */
+        
+        /* Catppuccin */
         /*frame_color = "#f38ba8";
         foreground = "#f38ba8";
         background = "#181825";
         timeout = 5;*/
+
+        /* Kanagawa */
+        /* frame_color = "#c34043";
+        foreground = "#c34043";
+        background = "#1f1f28"; */
+
+        /* Gruvbox */
+        frame_color = "#cc2d1d";
+        foreground = "#cc2d1d";
+        background = "#1d2021";
       };
     };
   };

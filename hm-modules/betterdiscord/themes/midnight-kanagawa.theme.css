@@ -1,0 +1,48 @@
+/**
+ * @name Midnight Kangawa
+ * @description My attempt at replicating the Kanagawa GTK theme.
+ * @author ardishco
+ * @version 420.69
+ * @source https://github.com/ardishco-the-great/midnight-kanagawa-discord/
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+/* change colors here */
+/* a color picker should show up if you hover over the "hsl(x, y, z)" part */
+.theme-dark {
+	/* main accent color */
+	--accent-color: #c99757;
+	/* color of accent color buttons on hover */
+	--accent-color-2: #47bad1;
+	/* color of accent color buttons on click */
+	--accent-color-3: #298fa3;
+	/* link color */
+	--link-color: #c99757;
+	/* user mention background */
+	--mention-background: #33b3cc4d;
+	/* background of messages that mention you */
+	--mentioned-background: #33b3cc1a;
+	/* background of messages that mention you on hover */
+	--mentioned-hover-background: #33b3cc14;
+	/* main text color (messages, titles, unread text/indicators) */
+	--primary-text: #c99757;
+	/* secondary text color (channels, descriptions, buttons) */
+	--secondary-text: rgb(87, 97, 117);
+	/* muted text color (input box placeholders, muted channels, message times) */
+	--muted-text: #8d6d43;
+	/* main chat/channel list/member list background */
+	--primary-background: #1f1f28;
+	/* background of pretty much everything else */
+	--secondary-background: #31313f;
+	/* scrollbar thumb color */
+	--scrollbar-color: #57c9c3;
+	/* color of things on hover */
+	--hover-modifier: #2b303b1a;
+	/* color of things when clicked */
+	--active-modifier: #2b303b33;
+	/* color of things when selected */
+	--selected-modifier: #2b303b4d;
+	/* amount of glow (set to 0 to disable) */
+	--glow-amount: 10px;
+}

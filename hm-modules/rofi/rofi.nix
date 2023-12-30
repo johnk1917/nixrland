@@ -37,6 +37,28 @@
   }
   '';
 
+  xdg.configFile."/home/john1917/.config/rofi/colors/kanagawa.rasi".text = ''
+  * {
+      background:     #1F1F28FF;
+      background-alt: #1F1F28FF;
+      foreground: #DCDFBAFF;
+      selected: #7E9CD8FF;
+      active: #25252FFF;
+      urgent: #C34043FF;
+  }
+  '';
+
+  xdg.configFile."/home/john1917/.config/rofi/colors/gruvbox.rasi".text = ''
+  *{
+      background: #1D2021FF;
+      background-alt: #1D2021FF;
+      foreground: #EBDBB2FF;
+      active: #282828FF;
+      selected: #8EC07CFF;
+      urgent: #CC241DFF;
+  }
+  '';
+
   xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/launcher.sh" = {
     executable = true;
     text = ''
@@ -85,7 +107,7 @@ xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/shared/colors.rasi"
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/tokyonight.rasi"
+@import "~/.config/rofi/colors/gruvbox.rasi"
 '';
 
   xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/style-1.rasi".text = ''
@@ -726,7 +748,7 @@ xdg.configFile."/home/john1917/.config/rofi/pdf-launcher/shared/colors.rasi".tex
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/tokyonight.rasi"
+@import "~/.config/rofi/colors/gruvbox.rasi"
 '';
 
 xdg.configFile."/home/john1917/.config/rofi/pdf-launcher/shared/fonts.rasi".text = ''
@@ -1041,7 +1063,7 @@ element selected.normal {
 
   /* Import color-scheme from `colors` directory */
 
-  @import "~/.config/rofi/colors/tokyonight.rasi"
+  @import "~/.config/rofi/colors/gruvbox.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/powermenu/shared/fonts.rasi".text = ''
@@ -1241,7 +1263,7 @@ element selected.normal {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/tokyonight.rasi"
+@import "~/.config/rofi/colors/gruvbox.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/screenshot/shared/fonts.rasi".text = ''
@@ -1417,7 +1439,7 @@ case-indicator {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
+    columns:                     3;
     lines:                       5;
     cycle:                       true;
     dynamic:                     true;
@@ -1602,7 +1624,7 @@ error-message {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/tokyonight.rasi"
+@import "~/.config/rofi/colors/gruvbox.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/wifi-menu/shared/colors.rasi".text = ''
@@ -1623,7 +1645,7 @@ error-message {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/tokyonight.rasi"
+@import "~/.config/rofi/colors/gruvbox.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/wifi-menu/shared/fonts.rasi".text = ''

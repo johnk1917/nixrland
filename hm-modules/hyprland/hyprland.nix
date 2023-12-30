@@ -11,13 +11,12 @@
       env = XCURSOR_SIZE,24
       env = EDITOR,nvim
       env = VISUAL,nvim
-      env = GTK_THEME,Tokyonight-Dark-B
+      env = GTK_THEME,gruvbox-dark
 
       # Default directory containing all necessary shell scripts
 
       # Execute your favorite apps at launch
       exec-once = swww init
-      exec-once = swww img /etc/nixos/wallpapers/waneella-dark-blue.png 
       exec-once = dunst
       exec-once = spotifyd
       exec-once = waybar
@@ -43,10 +42,14 @@
           gaps_in = 5
           gaps_out = 10
           border_size = 3
-          col.active_border = rgba(7aa2f7ee) rgba(87aaf8ee) 45deg # tokyonight
+          # col.active_border = rgba(7aa2f7ee) rgba(87aaf8ee) 45deg # tokyonight
+          # col.inactive_border = rgba(32344aaa) # tokyonight 
           # col.active_border = rgba(89b4faee) rgba(89b4faee) 45deg # catppuccin-mocha
-          col.inactive_border = rgba(32344aaa) # tokyonight 
           # col.inactive_border = rgba(1e1e2eaa) # catppuccin-mocha
+          # col.active_border = rgba(7e9cd8aa) rgba(7fb4caaa) #kanagawa 
+          # col.inactive_border = rgba(25252faa) #kanagawa
+          col.active_border = rgba(8ec07caa) rgba(8ec07caa) #gruvbox
+          col.inactive_border = rgba(282828aa) #gruvbox
 
           layout = master
       }
@@ -57,13 +60,13 @@
           drop_shadow = yes
           shadow_range = 3
           shadow_render_power = 2
-          col.shadow = rgba(32344aee)
+          col.shadow = rgba(3c3836ee)
 
           blur {
             enabled = true
             new_optimizations = on
             size = 4
-            passes = 2
+            passes = 3
             ignore_opacity = true
           }
       }
@@ -138,7 +141,7 @@
       bind = $altMod SHIFT, M, exit, 
       bind = $mainMod SHIFT, SPACE, togglefloating,
       bind = $mainMod, F, fullscreen
-      bind = $mainMod, D, exec, $HOME/.config/rofi/launchers/type-1/launcher.sh
+      bind = $mainMod, D, exec, rofi-menu
       bind = $mainMod SHIFT, A, exec, $terminal -e ani-cli
       bind = $mainMod, S, exec, screenshot 
       bind = $mainMod, X, exec, powermenu

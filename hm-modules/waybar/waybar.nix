@@ -9,10 +9,11 @@
           * Maintainer: johnk1917
           *
           */
-           
+         /* 
           @define-color background #1a1b26;
           @define-color foreground #c0caf5;
           @define-color alt_background #1f1f2d;
+          @define-color accent #7aa2f7;
 
           @define-color black #32344a;
           @define-color red #f7768e;
@@ -31,13 +32,14 @@
           @define-color alt_magenta #bb9af7;
           @define-color alt_cyan #7bdaf1;
           @define-color alt_white #c0caf5;
-          
+        */
 
           /* Catppuccin Mocha palette*/ 
           
           /*@define-color foreground #cdd6f4;
           @define-color background #181825;
           @define-color alt_background #1e1e2e;
+          @define-color accent #89b4fa;
 
           @define-color black #45475a;
           @define-color red #f38ba8;
@@ -56,7 +58,56 @@
           @define-color alt_magenta #f5c2e7;
           @define-color alt_cyan #94e2d5;
           @define-color alt_white #a6adc8;*/
-          
+
+          /* Kanagawa Palette */ 
+          /* 
+          @define-color foreground #dcd7ba;
+          @define-color background #1f1f28;
+          @define-color alt_background #25252f;
+          @define-color accent #7e9dc8;
+
+          @define-color black #090618;
+          @define-color red #c34043;
+          @define-color green #76946a;
+          @define-color blue #7e9cd8; 
+          @define-color yellow #c0a36e;
+          @define-color magenta #958fb8;
+          @define-color cyan #6a9589;
+          @define-color white #c8c093;
+
+          @define-color alt_black #727169;
+          @define-color alt_red #e82424;
+          @define-color alt_green #98bb6c;
+          @define-color alt_blue #7fb4ca;
+          @define-color alt_yellow #e6c384;
+          @define-color alt_magenta #938aa9;
+          @define-color alt_cyan #7aa89f;
+          @define-color alt_white #dcd7ba;
+          */
+
+          /* Gruvbox Palette */ 
+          @define-color foreground #ebdbb2;
+          @define-color background #1d2021;
+          @define-color alt_background #282828;
+          @define-color accent #689d6a;
+
+          @define-color black #282828;
+          @define-color red #cc241d;
+          @define-color green #98971a;
+          @define-color blue #7daea3;
+          @define-color yellow #d79921;
+          @define-color magenta #b16286;
+          @define-color cyan #689d6a;
+          @define-color white #a89984;
+
+          @define-color alt_black #3c3836;
+          @define-color alt_red #fb4934;
+          @define-color alt_green #b8bb26;
+          @define-color alt_blue #7daea3;
+          @define-color alt_yellow #fabd2f;
+          @define-color alt_magenta #d3869b;
+          @define-color alt_cyan #8ec07c;
+          @define-color alt_white #ebdbb2;
 
         * {
 
@@ -119,11 +170,11 @@
         }
 
         #workspaces button:hover {
-          background-color: rgba(31, 31, 45, 0.5)
+          background-color: rgba(0, 0, 0, 0)
         }
 
         #workspaces button.active {
-          color: @blue;
+          color: @accent;
         }
 
         #workspaces button.urgent {
@@ -228,7 +279,7 @@
         }
 
         #custom-wmname {
-            color: @blue;
+            color: @accent;
             background-color: @background;
             font-size: 25px;
             margin: 1px;
@@ -334,6 +385,7 @@
           format-linked = "{ifname} (No IP)  ";
           format-disconnected = "󰤮 Disconnected";
           on-click = "wifi-menu";
+          on-click-release = "sleep 0";
           tooltip-format = "{essid} {signalStrength}%";
         };
 
@@ -357,19 +409,20 @@
           on-click = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
           on-click-right = "pactl set-source-mute @DEFAULT_SOURCE@ toggle";
           on-click-middle = "pavucontrol";
+          on-click-release = "sleep 0";
+          on-click-middle-release = "sleep 0";
         };
 
         "custom/wmname" = {
           format = " ";
-          tooltip = "false";
-          on-click = "$HOME/.config/rofi/launchers/type-1/launcher.sh";
-          on-click-right = "screenshot";
-          on-click-middle = "wallpaper-switch";
+          on-click = "rofi-menu";
+          on-click-release = "sleep 0";
         };
 
         "custom/powermenu" = {
           format = " ";
           on-click = "powermenu";
+          on-click-release = "sleep 1";
         };
       };
     };
