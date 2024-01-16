@@ -88,6 +88,29 @@
 
   # Enable Hyprland + Other WMs 
   programs.hyprland.enable = true;
+
+  services.xserver.windowManager.dwm = {
+  enable = true;
+  package = pkgs.dwm.overrideAttrs {
+     src = ./hm-modules/suckless/suckless/dwm;
+      nativeBuildInputs = with pkgs; [ #writing once works for both currently, sort of bug and feature
+       xorg.libX11.dev
+        xorg.libXft
+        imlib2
+        xorg.libXinerama
+        ];
+      };
+   };
+  
+  # Enable Doas and Disable sudo
+  security.doas.enable = true;
+  security.sudo.enable = false;
+  # Configure doas
+  security.doas.extraRules = [{
+  users = [ "john1917" ];
+  keepEnv = true;
+  persist = true;  
+  }];
   
   # Enable fonts 
   fonts.packages = with pkgs; [
@@ -111,7 +134,7 @@
       defaultSession = "hyprland";
       lightdm = {
         enable = true;
-        background = ./wallpapers/japan_garden.jpg;
+        background = ./wallpapers/ledge_kanagawa.png;
         greeters = {
           slick.enable = true;
         };
@@ -145,12 +168,20 @@
         ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
       '';
   };
-  
+
+  # Enable Steam 
+  programs.steam = {
+  enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedica   ted Server
+  };
+
   # Override Aliases
   environment.shellAliases = {
     ls = "eza -l -x --icons --git --group-directories-first";
     rebuild-nix = "sudo nixos-rebuild switch";
     rebuild-hm = "home-manager switch";
+    update-nixos = "sudo nix flake update /etc/nixos && sudo nixos-rebuild switch";
   };
 
   # Enable Starship  

@@ -23,26 +23,33 @@
           ./hm-modules/swaylock/swaylock.nix
           ./hm-modules/rofi/rofi.nix
           ./hm-modules/neofetch/neofetch.nix
+          ./hm-modules/neovim/nvchad.nix
+          ./hm-modules/betterdiscord/betterdiscord.nix
+          ./hm-modules/suckless/suckless.nix
+          ./hm-modules/alacritty/alacritty.nix
       ];
 
       # Enable GTK themes
        gtk = {
         enable = true;
          theme = {
-             name = "Tokyonight-Dark-B";
-             package = pkgs.tokyo-night-gtk; 
-           # name = "Catppuccin-Mocha-Compact-Blue-Dark";
-           # package = pkgs.catppuccin-gtk.override {
-            # accents = ["blue"];
-            # size = "compact";
-            # tweaks = ["rimless"];
-            # variant = "mocha";
-           #};
+             name = "adw-gtk3-dark";
+             package = pkgs.adw-gtk3;
+             # name = "Tokyonight-Dark-BL";
+             # package = pkgs.tokyo-night-gtk
+             # name = "Catppuccin-Mocha-Compact-Blue-Dark";
+             # package = pkgs.catppuccin-gtk.override {
+              # accents = ["blue"];
+              # size = "compact";
+              # tweaks = ["rimless"];
+              # variant = "mocha";
+              #};
         };
           iconTheme = {
-            name  =  "Papirus-Dark";
+            name  =  "Papirus";
+            package = pkgs.papirus-icon-theme.override { color = "indigo"; };
             # package = pkgs.catppuccin-papirus-folders;
-            package = pkgs.papirus-icon-theme.override { color = "blue"; };
+            # package = pkgs.gruvbox-dark-icons-gtk;
           }; 
           cursorTheme = {
             name = "Bibata-Modern-Ice";
