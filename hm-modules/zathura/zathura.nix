@@ -125,8 +125,56 @@
       highlight-active-color = "#F5C2E7";
     */
 
+     # Kanagawa Theme
+     /* # Allow recolor
+      recolor = "true";
+
+      # Don't allow original hue when recoloring
+      recolor-keephue = "true";
+  
+      # Don't keep original image colors while recoloring
+      recolor-reverse-video = "false";
+
+      default-fg = "#dcd7ba";
+      default-bg = "rgba(31, 31, 40, 0.95)";
+
+      completion-bg	= "#1f1f28";
+      completion-fg	= "#dcd7ba";
+      completion-highlight-bg	= "#1f1f28";
+      completion-highlight-fg	= "#dcd7ba";
+      completion-group-bg	= "#1f1f28";
+      completion-group-fg	= "#7e9dc8";
+
+      statusbar-fg = "#dcd7ba";
+      statusbar-bg = "#1f1f28";
+
+      notification-bg	= "#1f1f28";
+      notification-fg	= "#dcd7ba";
+      notification-error-bg	= "#1f1f28";
+      notification-error-fg	= "#e82424";
+      notification-warning-bg	= "#1f1f28";
+      notification-warning-fg	=  "#dcd7ba";
+
+      inputbar-fg	= "#dcd7ba";
+      inputbar-bg = "#1f1f28";
+
+      recolor-lightcolor	= "rgba(0, 0, 0, 0)";
+      recolor-darkcolor	= "#dcd7ba";
+
+      index-fg	= "#dcd7ba";
+      index-bg = "#1f1f28";
+      index-active-fg	= "#dcd7ba";
+      index-active-bg	= "#1f1f28";
+
+      render-loading-bg	= "#1f1f28";
+      render-loading-fg	= "#dcd7ba";
+
+      highlight-color	= "#727169";
+      highlight-fg = "#dcd7ba";
+      highlight-active-color = "#dcd7ba"; */
+
      # Gruvbox Theme
-      # Allow recolor
+      /* # Allow recolor
       recolor = "true";
 
       # Don't allow original hue when recoloring
@@ -171,7 +219,103 @@
 
       highlight-color	= "#3c3836";
       highlight-fg = "#ebdbb2";
-      highlight-active-color = "#ebdbb2";
+      highlight-active-color = "#ebdbb2"; */
+
+    # Oxocarbon Theme
+      /* # Allow recolor
+      recolor = "true";
+
+      # Don't allow original hue when recoloring
+      recolor-keephue = "true";
+  
+      # Don't keep original image colors while recoloring
+      recolor-reverse-video = "false";
+
+      default-fg = "#f2f4f8";
+      default-bg = "rgba(22, 22, 22, 0.95)";
+
+      completion-bg	= "#161616";
+      completion-fg	= "#f2f4f8";
+      completion-highlight-bg	= "#161616";
+      completion-highlight-fg	= "#f2f4f8";
+      completion-group-bg	= "#161616";
+      completion-group-fg	= "#3ddbd9";
+
+      statusbar-fg = "#f2f4f8";
+      statusbar-bg = "#161616";
+
+      notification-bg	= "#161616";
+      notification-fg	= "#f2f4f8";
+      notification-error-bg	= "#161616";
+      notification-error-fg	= "#ee5396";
+      notification-warning-bg	= "#161616";
+      notification-warning-fg	=  "#f2f4d8";
+
+      inputbar-fg	= "#f2f4f8";
+      inputbar-bg = "#161616";
+
+      recolor-lightcolor	= "rgba(0, 0, 0, 0)";
+      recolor-darkcolor	= "#f2f4f8";
+
+      index-fg	= "#f2f4f8";
+      index-bg = "#161616";
+      index-active-fg	= "#f2f4f8";
+      index-active-bg	= "#161616";
+
+      render-loading-bg	= "#161616";
+      render-loading-fg	= "#f2f4f8";
+
+      highlight-color	= "#262626";
+      highlight-fg = "#f2f4d8";
+      highlight-active-color = "#f2f4f8"; */ 
+
+    # Oxocarbon Theme
+      # Allow recolor
+      recolor = "true";
+
+      # Don't allow original hue when recoloring
+      recolor-keephue = "true";
+  
+      # Don't keep original image colors while recoloring
+      recolor-reverse-video = "false";
+
+      default-fg = "#a5b6cf";
+      default-bg = "rgba(13, 15, 24, 0.95)";
+
+      completion-bg	= "#0d0f18";
+      completion-fg	= "#a5b6cf";
+      completion-highlight-bg	= "#0d0f18";
+      completion-highlight-fg	= "#a5b6cf";
+      completion-group-bg	= "#0d0f18";
+      completion-group-fg	= "#86aaec";
+
+      statusbar-fg = "#a5b6cf";
+      statusbar-bg = "#0d0f18";
+
+      notification-bg	= "#0d0f18";
+      notification-fg	= "#a5b6cf";
+      notification-error-bg	= "#0d0f18";
+      notification-error-fg	= "#e26c7c";
+      notification-warning-bg	= "#0d0f18";
+      notification-warning-fg	=  "#f2f4d8";
+
+      inputbar-fg	= "#a5b6cf";
+      inputbar-bg = "#0d0f18";
+
+      recolor-lightcolor	= "rgba(0, 0, 0, 0)";
+      recolor-darkcolor	= "#a5b6cf";
+
+      index-fg	= "#a5b6cf";
+      index-bg = "#0d0f18";
+      index-active-fg	= "#a5b6cf";
+      index-active-bg	= "#0d0f18";
+
+      render-loading-bg	= "#0d0f18";
+      render-loading-fg	= "#a5b6cf";
+
+      highlight-color	= "#242942";
+      highlight-fg = "#a5b6cf";
+      highlight-active-color = "#a5b6cf";
     };
   };
-  }
+}

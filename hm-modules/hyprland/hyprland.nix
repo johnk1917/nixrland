@@ -4,6 +4,12 @@
     enable = true;
     settings = { };
     extraConfig = ''
+      ########################################################################################
+      #                                                                                      #
+      #                                 JOHN1917'S HYPRLAND                                  #
+      #                                                                                      # 
+      ########################################################################################
+
       # Set monitor dimensions
       monitor=eDP-1, 1920x1080, 0x0, 1
 
@@ -11,7 +17,7 @@
       env = XCURSOR_SIZE,24
       env = EDITOR,nvim
       env = VISUAL,nvim
-      env = GTK_THEME,gruvbox-dark
+      env = GTK_THEME,adw-gtk3-dark
 
       # Default directory containing all necessary shell scripts
 
@@ -46,10 +52,14 @@
           # col.inactive_border = rgba(32344aaa) # tokyonight 
           # col.active_border = rgba(89b4faee) rgba(89b4faee) 45deg # catppuccin-mocha
           # col.inactive_border = rgba(1e1e2eaa) # catppuccin-mocha
-          # col.active_border = rgba(7e9cd8aa) rgba(7fb4caaa) #kanagawa 
+          # col.active_border = rgba(7aa89faa) rgba(6a9589aa) 45deg #kanagawa 
           # col.inactive_border = rgba(25252faa) #kanagawa
-          col.active_border = rgba(8ec07caa) rgba(8ec07caa) #gruvbox
-          col.inactive_border = rgba(282828aa) #gruvbox
+          # col.active_border = rgba(8ec07caa) rgba(8ec07caa) 45deg #gruvbox
+          # col.inactive_border = rgba(3c3836aa) #gruvbox
+          # col.active_border = rgba(3ddbd9aa) rgba(82cfffaa) 45deg #oxocarbon
+          # col.inactive_border = rgba(262626aa) #oxocarbon
+          col.active_border = rgba(8baff1aa) rgba(86aaecaa) 45deg #decay
+          col.inactive_border = rgba(151720aa) #decay
 
           layout = master
       }
@@ -60,7 +70,7 @@
           drop_shadow = yes
           shadow_range = 3
           shadow_render_power = 2
-          col.shadow = rgba(3c3836ee)
+          col.shadow = rgba(1c1e27ee)
 
           blur {
             enabled = true
@@ -153,7 +163,7 @@
       bind = $mainMod SHIFT, R, exec, $terminal -e yazi
       bind = $mainMod SHIFT, Z, exec, zathura
       bind = $mainMod SHIFT, S, exec, librewolf
-      bind = $mainMod SHIFT, F, exec, thunar
+      bind = $mainMod SHIFT, F, exec, nemo
       bind = $mainMod SHIFT, X, exec, firefox
       bind = $mainMod SHIFT, E, exec, libreoffice
 

@@ -42,9 +42,31 @@
       background:     #1F1F28FF;
       background-alt: #1F1F28FF;
       foreground: #DCDFBAFF;
-      selected: #7E9CD8FF;
+      selected: #7aa89fFF;
       active: #25252FFF;
       urgent: #C34043FF;
+  }
+  '';
+
+  xdg.configFile."/home/john1917/.config/rofi/colors/oxocarbon.rasi".text = ''
+  * {
+      background: #161616FF;
+      background-alt: #161616FF;
+      foreground: #F2F4F8FF;
+      selected: #3DDBD9FF;
+      active: #262626FF;
+      urgent: #EE5396FF;
+  }
+  '';
+
+  xdg.configFile."/home/john1917/.config/rofi/colors/decayce.rasi".text = ''
+  * {
+      background: #0d0f18FF;
+      background-alt: #0d0f18FF;
+      foreground: #a5b6cfFF;
+      selected: #8baff1FF;
+      active: #121521FF;
+      urgent: #e26c7cFF; 
   }
   '';
 
@@ -107,7 +129,7 @@ xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/shared/colors.rasi"
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/gruvbox.rasi"
+@import "~/.config/rofi/colors/decayce.rasi"
 '';
 
   xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/style-1.rasi".text = ''
@@ -748,7 +770,7 @@ xdg.configFile."/home/john1917/.config/rofi/pdf-launcher/shared/colors.rasi".tex
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/gruvbox.rasi"
+@import "~/.config/rofi/colors/decayce.rasi"
 '';
 
 xdg.configFile."/home/john1917/.config/rofi/pdf-launcher/shared/fonts.rasi".text = ''
@@ -1063,7 +1085,7 @@ element selected.normal {
 
   /* Import color-scheme from `colors` directory */
 
-  @import "~/.config/rofi/colors/gruvbox.rasi"
+  @import "~/.config/rofi/colors/decayce.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/powermenu/shared/fonts.rasi".text = ''
@@ -1263,7 +1285,7 @@ element selected.normal {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/gruvbox.rasi"
+@import "~/.config/rofi/colors/decayce.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/screenshot/shared/fonts.rasi".text = ''
@@ -1624,7 +1646,7 @@ error-message {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/gruvbox.rasi"
+@import "~/.config/rofi/colors/decayce.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/wifi-menu/shared/colors.rasi".text = ''
@@ -1645,7 +1667,7 @@ error-message {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/gruvbox.rasi"
+@import "~/.config/rofi/colors/decayce.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/wifi-menu/shared/fonts.rasi".text = ''

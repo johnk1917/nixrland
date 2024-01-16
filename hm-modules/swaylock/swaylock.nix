@@ -15,7 +15,8 @@
       effect-blur="7x5";
       indicator-radius="150";
       indicator-thickness="10";
-      text-wrong-color="FFFFFFFF";
+      /* Gruvbox Colors */
+      /* text-wrong-color="FFFFFFFF";
       text-ver-color="FFFFFFFF";
       text-clear-color="FFFFFFFF";
       key-hl-color="fabd2fFF";
@@ -34,7 +35,29 @@
       separator-color="FFFFFF00";
       line-color="FFFFFF00";
       text-color="FFFFFFFF";
-      font="JetBrainsMono Nerd Font";
+      font="JetBrainsMono Nerd Font"; */
+
+      /* Kanagawa Colors */ 
+      text-wrong-color="FFFFFFFF";
+      text-ver-color="FFFFFFFF";
+      text-clear-color="FFFFFFFF";
+      key-hl-color="e6c384FF";
+      bs-hl-color="fb4934FF";
+      inside-color="25252f7F";
+      inside-clear-color="25252f7F";
+      inside-wrong-color="25252f7F";
+      ring-clear-color="fb4934FF";
+      ring-wrong-color="e82424ff";
+      ring-ver-color="98bb6cFF";
+      inside-ver-color="25252f7F";
+      ring-color="7aa89fff";
+      line-clear-color="FFFFFF00";
+      line-ver-color="FFFFFF00";
+      line-wrong-color="FFFFFF00";
+      separator-color="FFFFFF00";
+      line-color="FFFFFF00";
+      text-color="FFFFFFFF";
+      font="JetBrainsMono Nerd Font"; 
     };
   };
 }

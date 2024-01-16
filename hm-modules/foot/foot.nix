@@ -22,8 +22,7 @@
      # Colors 
         colors = {
            alpha="0.95";
-            # TokyoNight Colors  
-            /* 
+            /* # TokyoNight Colors  
             background="0x1a1b26";
             foreground="0xa9b1d6";
 
@@ -43,12 +42,10 @@
             bright4="0x7aa2f7";
             bright5="0xbb9af7";
             bright6="0x7dcfff";
-            bright7="0xc0caf5"; 
-          */
+            bright7="0xc0caf5"; */
 
           # Kanagawa Colors 
-          /*
-           background="0x1f1f27";
+           /* background="0x1f1f28";
            foreground="0xdcd7ba";
            
            regular0="0x090618";
@@ -67,8 +64,7 @@
            bright4="0x7fb4ca";
            bright5="0x938aa9";
            bright6="0x7aa89f";
-           bright7="0xdcd7ba";
-        */
+           bright7="0xdcd7ba"; */
 
         # Catppuccin Colors
         /*
@@ -95,7 +91,7 @@
         */
 
          # Gruvbox Colors 
-           background="0x1d2021";
+           /* background="0x1d2021";
            foreground="0xebdbb2";
 
            regular0="0x282828";
@@ -114,8 +110,52 @@
            bright4="0x7daea3";
            bright5="0xd3869b";
            bright6="0x8ec07c";
-           bright7="0xebdbb2";
-        };
+           bright7="0xebdbb2"; */
+
+          # Oxocarbon Colors 
+          /* background="0x161616";
+          foreground="0xffffff";
+          
+          regular0="0x262626";
+          regular1="0xee5396";
+          regular2="0x42be65";
+          regular3="0xffab91";
+          regular4="0x33b1ff";
+          regular5="0xbe95ff";
+          regular6="0x3ddbd9";
+          regular7="0xdde1e6";
+
+          bright0="0x262626";
+          bright1="0xee5396";
+          bright2="0x42be65";
+          bright3="0xffab91";
+          bright4="0x33b1ff";
+          bright5="0xbe95ff";
+          bright6="0x3ddbd9";
+          bright7="0xdde1e6"; */ 
+
+          # Dark Decay Colors 
+          background="0x0d0f18";
+          foreground="0xa5b6cf";
+
+          regular0="0x1c1e27";
+          regular1="0xe26c7c";
+          regular2="0x95d3af";
+          regular3="0xf1d8a5";
+          regular4="0x8baff1";
+          regular5="0xc79bf0";
+          regular6="0x98d3ee";
+          regular7="0xd0d3d8";
+
+          bright0="0x151720";
+          bright1="0xdd6777";
+          bright2="0x90ceaa";
+          bright3="0xecd3a0";
+          bright4="0x86aaec";
+          bright5="0xc296eb";
+          bright6="0x93cee9";
+          bright7="0xcbced3";
+          };
       };
     };
  }

@@ -63,15 +63,26 @@
         timeout = 5;*/
         
         /* Kanagawa */
-        /* frame_color = "#7e9cd8";
-        foreground = "#7e9cd8";
+        /* frame_color = "#7aa89f";
+        foreground = "#7aa89f";
         background = "#1f1f28";
         timeout = 5; */
 
         /* Gruvbox */
-        frame_color = "#8ec07c";
-        foreground = "#ebdbb2";
-        background = "#1d2021";
+        /* frame_color = "#8ec07c";
+        foreground = "#8ec07c";
+        background = "#1d2021"; */
+
+        /* Oxocarbon */ 
+        /* frame_color = "#3ddbd9";
+        foreground = "#3ddbd8";
+        background = "#161616"; */ 
+
+        /* Decay */
+        frame_color = "#8baff1"; 
+        foreground = "#8baff1";
+        background = "#0d0f18";
+
       };
 
       urgency-critical = {
@@ -93,9 +104,19 @@
         background = "#1f1f28"; */
 
         /* Gruvbox */
-        frame_color = "#cc2d1d";
+        /* frame_color = "#cc2d1d";
         foreground = "#cc2d1d";
-        background = "#1d2021";
+        background = "#1d2021"; */
+
+        /* Oxocarbon */ 
+        /* frame_color = "#ee5396";
+        foreground = "#ee5396";
+        background = "#161616"; */
+
+        /* Decay */
+        frame_color = "#e26c7c"; 
+        foreground = "#e26c7c";
+        background = "#0d0f18";
       };
     };
   };

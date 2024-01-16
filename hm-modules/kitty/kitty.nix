@@ -1,5 +1,5 @@
 {config, pkgs, ... }: {
-    xdg.configFile."/home/john1917/.config/kitty/kitty.conf.tokyonight".text = ''
+    xdg.configFile."/home/john1917/.config/kitty/kitty.tokyonight.conf".text = ''
 # Tokyo Night color scheme for kitty terminal emulator
 # https://github.com/davidmathers/tokyo-night-kitty-theme
 #
@@ -143,10 +143,16 @@ color17 #FF5D62
     font_size      13.0
 
 # Close window confirmation 
-    confirm_os_window_close 0 
+    confirm_os_window_close 0
+
+# Padding
+    window_margin_width 12
+
+# Opacity
+    background_opacity 0.95
   '';
 
- xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+ xdg.configFile."/home/john1917/.config/kitty/kitty.gruvbox.conf".text = ''
 background #1d2021
 foreground #ebdbb2
 selection_background #3c3836
@@ -177,6 +183,48 @@ color15 #ebdbb2
 
 # extended colors
 color16 #d65d0e
+
+# Font
+    font_family      Iosevka Nerd Font
+    font_size      13.0
+
+# Close window confirmation 
+    confirm_os_window_close 0
+
+# Padding
+    window_margin_width 12
+
+# Opacity
+    background_opacity 0.95
+  '';
+
+ xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+background #0d0f18
+foreground #a5b6cf
+selection_background #242942
+selection_foreground #a5b6cf
+url_color #95d3af
+cursor #a5b6cf
+
+# normal
+color0 #1c1e27
+color1 #e26c7c
+color2 #95d3af
+color3 #f1d8af
+color4 #8baff1
+color5 #c79bf0
+color6 #98d3ee
+color7 #d0d3d8
+
+# bright
+color8  #151720
+color9  #dd6777
+color10 #90caaa
+color11 #ecd3a0
+color12 #86aaec
+color13 #c296eb
+color14 #93cee9
+color15 #cbced3
 
 # Font
     font_family      Iosevka Nerd Font

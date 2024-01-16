@@ -60,11 +60,10 @@
           @define-color alt_white #a6adc8;*/
 
           /* Kanagawa Palette */ 
-          /* 
-          @define-color foreground #dcd7ba;
+          /* @define-color foreground #dcd7ba;
           @define-color background #1f1f28;
           @define-color alt_background #25252f;
-          @define-color accent #7e9dc8;
+          @define-color accent #7aa89f;
 
           @define-color black #090618;
           @define-color red #c34043;
@@ -82,11 +81,10 @@
           @define-color alt_yellow #e6c384;
           @define-color alt_magenta #938aa9;
           @define-color alt_cyan #7aa89f;
-          @define-color alt_white #dcd7ba;
-          */
+          @define-color alt_white #dcd7ba; */
 
           /* Gruvbox Palette */ 
-          @define-color foreground #ebdbb2;
+          /* @define-color foreground #ebdbb2;
           @define-color background #1d2021;
           @define-color alt_background #282828;
           @define-color accent #689d6a;
@@ -107,7 +105,55 @@
           @define-color alt_yellow #fabd2f;
           @define-color alt_magenta #d3869b;
           @define-color alt_cyan #8ec07c;
-          @define-color alt_white #ebdbb2;
+          @define-color alt_white #ebdbb2; */
+
+          /* OxoCarbon Palette */ 
+          /* @define-color foreground #f2f4f8;
+          @define-color background #161616;
+          @define-color alt_background #1a1a1a;
+          @define-color accent #3ddbd9;
+
+          @define-color black #262626;
+          @define-color red #ee5396;
+          @define-color green #42be65;
+          @define-color blue #33b1ff;
+          @define-color yellow #ffab91;
+          @define-color magenta #be95ff;
+          @define-color cyan #3ddbd9;
+          @define-color white #dde1e6;
+
+          @define-color alt_black #262626;
+          @define-color alt_red #ee5396;
+          @define-color alt_green #42be65;
+          @define-color alt_blue #33b1ff;
+          @define-color alt_yellow #ffab91;
+          @define-color alt_magenta #be95ff;
+          @define-color alt_cyan #3ddbd9;
+          @define-color alt_white #dde1e6; */ 
+
+          /* Decay Dark Palette */ 
+          @define-color foreground #a5b6cf;
+          @define-color background #0d0f18;
+          @define-color alt_background #121521;
+          @define-color accent #86aaec;
+
+          @define-color black #20222c; 
+          @define-color red #e26c7c;
+          @define-color green #95d3af;
+          @define-color blue #8baff1;
+          @define-color yellow #f1d8af;
+          @define-color magenta #c79bf0;
+          @define-color cyan #98d3ee;
+          @define-color white #d0d3d8;
+
+          @define-color alt_black #1e212e;
+          @define-color alt_red #dd6777;
+          @define-color alt_green #90caaa;
+          @define-color alt_blue #86aaec;
+          @define-color alt_yellow #ecd3a0;
+          @define-color alt_magenta #c296eb;
+          @define-color alt_cyan #93cee9;
+          @define-color alt_white #cbced3;
 
         * {
 
@@ -321,7 +367,7 @@
           format-icons = {
               "1" = " ";
               "2" = " ";
-              "3" = "";
+              "3" = " ";
               "4" = " ";
               "5" = " ";
               "6" = " ";
