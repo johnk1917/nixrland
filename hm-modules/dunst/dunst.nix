@@ -124,10 +124,9 @@
         background = "#0d0f18"; */
 
         /* Everblush */ 
-        /* frame_color = "#e57474";
+        frame_color = "#e57474";
         foreground = "#e57474";
         background = "#141b1e";
-        */
       };
     };
   };
