@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
   xdg.configFile."/home/john1917/.config/spotify-tui/config.yml".text = ''
-  theme:
-   # TokyoNight
+  theme: 
+    # TokyoNight
     # error_border: "243, 139, 168" # error dialog border is Red
     # error_text: "235, 160, 172" # error message text (e.g. "Spotify API reported error 404") is Maroon
     # hint: "255, 158, 100" # hint text in errors Yellow
@@ -18,20 +18,36 @@
     # header: "169, 177, 214" # header text in panes (e.g. 'Title', 'Artist', etc.) Lavender
 
     # Gruvbox
-    error_border: "204, 36, 29"
-    error_text: "204, 36, 29"
-    hint: "215, 153, 33"
-    playbar_background: "40, 40, 40"
-    playbar_progress: "104, 157, 106" 
-    playbar_progress_text: "53, 73, 53"
-    playbar_text: "142, 192, 124"
-    inactive: "60, 56, 54"
-    text: "168, 153, 132"
-    active: "60, 56, 54"
-    banner: "142, 192, 124"
-    hovered: "152, 151, 26"
-    selected: "142, 192, 124"
-    header: "168, 153, 132"
+    # error_border: "204, 36, 29"
+    # error_text: "204, 36, 29"
+    # hint: "215, 153, 33"
+    # playbar_background: "40, 40, 40"
+    # playbar_progress: "104, 157, 106" 
+    # playbar_progress_text: "53, 73, 53"
+    # playbar_text: "142, 192, 124"
+    # inactive: "60, 56, 54"
+    # text: "168, 153, 132"
+    # active: "60, 56, 54"
+    # banner: "142, 192, 124"
+    # hovered: "152, 151, 26"
+    # selected: "142, 192, 124"
+    # header: "168, 153, 132"
+
+    # Everblush
+    error_border: "229, 116, 116"
+    error_text: "229, 116, 116"
+    hint: "229, 199, 107"
+    playbar_background: "20, 27, 30"
+    playbar_progress: "108, 191, 191"
+    playbar_progress_text: "68, 157, 171"
+    playbar_text: "218, 218, 218"
+    inactive: "58, 69, 74"
+    text: "179, 185, 184"
+    active: "140, 207, 126"
+    banner: "108, 191, 191"
+    hovered: "140, 207, 126"
+    selected: "108, 191, 191"
+    header: "179, 185, 184"
 '';
   xdg.configFile."/home/john1917/.config/spotify-tui/client.yml".text = ''
     ---

@@ -79,9 +79,14 @@
         background = "#161616"; */ 
 
         /* Decay */
-        frame_color = "#8baff1"; 
+        /* frame_color = "#8baff1"; 
         foreground = "#8baff1";
-        background = "#0d0f18";
+        background = "#0d0f18"; */
+
+        /* Everblush */ 
+        frame_color = "#67cbe7"; 
+        foreground = "#67cbe7";
+        background = "#141b1e"; 
 
       };
 
@@ -114,9 +119,15 @@
         background = "#161616"; */
 
         /* Decay */
-        frame_color = "#e26c7c"; 
+        /* frame_color = "#e26c7c"; 
         foreground = "#e26c7c";
-        background = "#0d0f18";
+        background = "#0d0f18"; */
+
+        /* Everblush */ 
+        /* frame_color = "#e57474";
+        foreground = "#e57474";
+        background = "#141b1e";
+        */
       };
     };
   };

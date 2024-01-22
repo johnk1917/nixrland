@@ -81,6 +81,17 @@
   }
   '';
 
+  xdg.configFile."/home/john1917/.config/rofi/colors/everblush.rasi".text = ''
+  *{
+      background: #141B1EFF;
+      background-alt: #141B1EFF;
+      foreground: #DADADAFF;
+      active: #232A2DFF;
+      selected: #67CBE7FF;
+      urgent: #E57474FF;
+  }
+  '';
+
   xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/launcher.sh" = {
     executable = true;
     text = ''
@@ -129,7 +140,7 @@ xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/shared/colors.rasi"
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/decayce.rasi"
+@import "~/.config/rofi/colors/everblush.rasi"
 '';
 
   xdg.configFile."/home/john1917/.config/rofi/launchers/type-1/style-1.rasi".text = ''
@@ -770,7 +781,7 @@ xdg.configFile."/home/john1917/.config/rofi/pdf-launcher/shared/colors.rasi".tex
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/decayce.rasi"
+@import "~/.config/rofi/colors/everblush.rasi"
 '';
 
 xdg.configFile."/home/john1917/.config/rofi/pdf-launcher/shared/fonts.rasi".text = ''
@@ -1085,7 +1096,7 @@ element selected.normal {
 
   /* Import color-scheme from `colors` directory */
 
-  @import "~/.config/rofi/colors/decayce.rasi"
+  @import "~/.config/rofi/colors/everblush.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/powermenu/shared/fonts.rasi".text = ''
@@ -1285,7 +1296,7 @@ element selected.normal {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/decayce.rasi"
+@import "~/.config/rofi/colors/everblush.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/screenshot/shared/fonts.rasi".text = ''
@@ -1646,7 +1657,7 @@ error-message {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/decayce.rasi"
+@import "~/.config/rofi/colors/everblush.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/wifi-menu/shared/colors.rasi".text = ''
@@ -1667,7 +1678,7 @@ error-message {
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/decayce.rasi"
+@import "~/.config/rofi/colors/everblush.rasi"
   '';
 
   xdg.configFile."/home/john1917/.config/rofi/wifi-menu/shared/fonts.rasi".text = ''

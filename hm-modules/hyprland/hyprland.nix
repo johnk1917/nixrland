@@ -52,14 +52,16 @@
           # col.inactive_border = rgba(32344aaa) # tokyonight 
           # col.active_border = rgba(89b4faee) rgba(89b4faee) 45deg # catppuccin-mocha
           # col.inactive_border = rgba(1e1e2eaa) # catppuccin-mocha
-          # col.active_border = rgba(7aa89faa) rgba(6a9589aa) 45deg #kanagawa 
+          # col.active_border = rgba(7aa89faa) rgba(7fb4caaa) 45deg #kanagawa 
           # col.inactive_border = rgba(25252faa) #kanagawa
           # col.active_border = rgba(8ec07caa) rgba(8ec07caa) 45deg #gruvbox
           # col.inactive_border = rgba(3c3836aa) #gruvbox
           # col.active_border = rgba(3ddbd9aa) rgba(82cfffaa) 45deg #oxocarbon
           # col.inactive_border = rgba(262626aa) #oxocarbon
-          col.active_border = rgba(8baff1aa) rgba(86aaecaa) 45deg #decay
-          col.inactive_border = rgba(151720aa) #decay
+          # col.active_border = rgba(8baff1aa) rgba(86aaecaa) 45deg #decay
+          # col.inactive_border = rgba(151720aa) #decay
+           col.active_border = rgba(67cbe7aa) rgba(67b0e8aa) 45deg #everblush
+           col.inactive_border = rgba(2d3437aa) #everblush
 
           layout = master
       }
@@ -70,7 +72,10 @@
           drop_shadow = yes
           shadow_range = 3
           shadow_render_power = 2
-          col.shadow = rgba(1c1e27ee)
+          # col.shadow = rgba(1c1e27ee) #decayce
+          # col.shadow = rgba(282828ee) #gruvbox
+          # col.shadow = rgba(25252fee) #kanagawa
+          col.shadow = rgba(232a2daa)
 
           blur {
             enabled = true

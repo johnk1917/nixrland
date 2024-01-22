@@ -135,26 +135,49 @@
           bright7="0xdde1e6"; */ 
 
           # Dark Decay Colors 
-          background="0x0d0f18";
+          /* background="0x0d0f18";
           foreground="0xa5b6cf";
 
-          regular0="0x1c1e27";
-          regular1="0xe26c7c";
-          regular2="0x95d3af";
-          regular3="0xf1d8a5";
-          regular4="0x8baff1";
-          regular5="0xc79bf0";
-          regular6="0x98d3ee";
-          regular7="0xd0d3d8";
+          regular0="0x32374d";
+          regular1="0xdd6777";
+          regular2="0x90ceaa";
+          regular3="0xecd3a0";
+          regular4="0x86aaec";
+          regular5="0xc296eb";
+          regular6="0x93cee9";
+          regular7="0xcbced3";
 
-          bright0="0x151720";
-          bright1="0xdd6777";
-          bright2="0x90ceaa";
-          bright3="0xecd3a0";
-          bright4="0x86aaec";
-          bright5="0xc296eb";
-          bright6="0x93cee9";
-          bright7="0xcbced3";
+          bright0="0x36394a";
+          bright1="0xe26c7c";
+          bright2="0x95d3af";
+          bright3="0xf1d8a5";
+          bright4="0x8baff1";
+          bright5="0xc79bf0";
+          bright6="0x98d3ee";
+          bright7="0xd0d3d8"; */
+
+          # Everblush Colors
+          background="0x141b1e";
+          foreground="0xdadada";
+
+          regular0="0x232a2d";
+          regular1="0xe57474";
+          regular2="0x8ccf7e";
+          regular3="0xe5c76b";
+          regular4="0x67b0e8";
+          regular5="0xc47fd5";
+          regular6="0x6cbfbf";
+          regular7="0xb3b9b8";
+
+          bright0="0x2d3437";
+          bright1="0xef7e7e";
+          bright2="0x96d988";
+          bright3="0xf4d67a";
+          bright4="0x71baf2";
+          bright5="0xce89df";
+          bright6="0x67cbe7";
+          bright7="0xbdc3c2";
+          
           };
       };
     };

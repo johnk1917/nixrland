@@ -198,7 +198,7 @@ color16 #d65d0e
     background_opacity 0.95
   '';
 
- xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+ xdg.configFile."/home/john1917/.config/kitty/kitty.decayce.conf".text = ''
 background #0d0f18
 foreground #a5b6cf
 selection_background #242942
@@ -225,6 +225,48 @@ color12 #86aaec
 color13 #c296eb
 color14 #93cee9
 color15 #cbced3
+
+# Font
+    font_family      Iosevka Nerd Font
+    font_size      13.0
+
+# Close window confirmation 
+    confirm_os_window_close 0
+
+# Padding
+    window_margin_width 12
+
+# Opacity
+    background_opacity 0.95
+  '';
+
+ xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+background #141b1e
+foreground #dadada
+selection_background #232a2d
+selection_foreground #dadada
+url_color #96d988
+cursor #dadada
+
+# normal
+color0 #232a2d
+color1 #e57474
+color2 #8ccf7e
+color3 #e5c76b
+color4 #67b0e8
+color5 #c47fd5
+color6 #6cbfbf
+color7 #b3b9b8
+
+# bright
+color8  #2d3437
+color9  #ef7f74
+color10 #96d988
+color11 #f4d67a
+color12 #71baf2
+color13 #ce89df
+color14 #67cbe7
+color15 #bdc3c2
 
 # Font
     font_family      Iosevka Nerd Font
