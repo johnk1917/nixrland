@@ -14,9 +14,9 @@
 	/* main accent color */
 	--accent-color: #c99757;
 	/* color of accent color buttons on hover */
-	--accent-color-2: #47bad1;
+	--accent-color-2: #7e9cd8;
 	/* color of accent color buttons on click */
-	--accent-color-3: #298fa3;
+	--accent-color-3: #7fb4ca;
 	/* link color */
 	--link-color: #c99757;
 	/* user mention background */
@@ -34,9 +34,9 @@
 	/* main chat/channel list/member list background */
 	--primary-background: #1f1f28;
 	/* background of pretty much everything else */
-	--secondary-background: #31313f;
+	--secondary-background: #25252f;
 	/* scrollbar thumb color */
-	--scrollbar-color: #57c9c3;
+	--scrollbar-color: #7aa89f;
 	/* color of things on hover */
 	--hover-modifier: #2b303b1a;
 	/* color of things when clicked */
@@ -44,5 +44,5 @@
 	/* color of things when selected */
 	--selected-modifier: #2b303b4d;
 	/* amount of glow (set to 0 to disable) */
-	--glow-amount: 10px;
+	--glow-amount: 0px;
 }
