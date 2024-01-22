@@ -6,7 +6,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/packages.nix
+      ./packages.nix
     ];
 
   # System version
@@ -48,6 +48,11 @@
   '';
   security.polkit.enable = true;
 
+  # Enable VirtualBox 
+  # virtualisation.virtualbox.host.enable = true;
+  # virtualisation.virtualbox.guest.enable = true;
+  
+  # Chose The Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
   
   # Define hostname
@@ -87,8 +92,9 @@
   };
 
   # Enable Hyprland + Other WMs 
+  # Hyprland
   programs.hyprland.enable = true;
-
+  # DWM 
   services.xserver.windowManager.dwm = {
   enable = true;
   package = pkgs.dwm.overrideAttrs {
@@ -163,9 +169,9 @@
         KITTY_SHELL_INTEGRATION="enabled"
         typeset -gA ZSH_HIGHLIGHT_STYLES
         ${pkgs.any-nix-shell}/bin/any-nix-shell zsh --info-right | source /dev/stdin
-        ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
-        ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
-        ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
+        ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
+        ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
+        ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
       '';
   };
 
@@ -191,7 +197,7 @@
     settings = {
       add_newline = true;
       character = {
-         success_symbol = "[󰊠   ](bold blue)";
+         success_symbol = "[󰊠   ](bold cyan)";
          error_symbol = "[󰊠   ](bold red)";
        };
       nix_shell = {
