@@ -26,7 +26,6 @@
           ./hm-modules/neovim/nvchad.nix
           ./hm-modules/betterdiscord/betterdiscord.nix
           ./hm-modules/suckless/suckless.nix
-          ./hm-modules/alacritty/alacritty.nix
       ];
 
       # Enable GTK themes
@@ -47,7 +46,7 @@
         };
           iconTheme = {
             name  =  "Papirus";
-            package = pkgs.papirus-icon-theme.override { color = "indigo"; };
+            package = pkgs.papirus-icon-theme.override { color = "bluegrey"; };
             # package = pkgs.catppuccin-papirus-folders;
             # package = pkgs.gruvbox-dark-icons-gtk;
           }; 
